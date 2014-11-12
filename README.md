@@ -1,11 +1,14 @@
 Banner.js v0.1版
-=========
-作者：elysion72513
-时间：2014-11-12
+#=========
+<p>
+作者：elysion72513<br>
+时间：2014-11-12<br>
 联系邮箱：elsyion72513@hotmail.com
+</p>
 
-参数：
-*options的默认属性说明
+
+<pre>
+<h3>*options的默认属性说明</h3>
 *loading  		//加载banner模块前的展示内容<必须是 标签类型 && class && id>
 *bannerBox		//包含轮播块的模型
 *bannerList 	//轮播的块状模型
@@ -20,5 +23,6 @@ Banner.js v0.1版
 *bannerwheel	//鼠标滚轮事件
 *bannerauto		//是否开启自动轮播
 *autoTime		  //自动轮播的时间
+</pre>
 
-欢迎试用并提出修改意见。
+<p>欢迎试用并提出修改意见。</p>
