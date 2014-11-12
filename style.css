@@ -1,0 +1,16 @@
+*{margin:0;}
+img{max-width: 100%;}
+.banner-load img , .banner-item img{ display: block; margin: 0 auto; width:100%; }
+.banner-show , .banner-test{ width:500px; margin:50px auto; border:15px solid #aaa; position: relative; display: none; overflow: hidden; border-radius: 15px; }
+.banner-list{ position: relative; overflow: hidden; }
+.banner-list .banner-item{ float:left; }
+.banner-list .banner-item img{ display: block; margin:0 auto; }
+
+.banner-disk{ display: block; margin:0 auto; position: absolute; bottom:5px; left:50%; }
+.banner-disk span{ display: inline-block; width:2px; height: 2px; margin-right: 4px; cursor: pointer; background: #fefefe; border:3px #aaa solid; border-radius: 4px; }
+.banner-disk span.active{ border:3px #ccc solid; background: #aaa; }
+.goprev , .gonext{ display: none; width:50px; height: 50px; top:50%; margin-top: -25px; position: absolute; cursor:pointer; background: #333; color:#fefefe; border-radius: 25px; opacity: .8;filter: alpha(opacity=80); line-height: 50px; text-align: center; box-shadow: 1px 1px 1px #ccc, -1px -1px 1px #ccc; font-size: 24px; }
+.goprev{ left: 5px; }
+.gonext{ right: 5px; }
+.goprev:hover , .gonext:hover{ background: #cecece; color:#333; }
+.clearfix{ clear: both; }
