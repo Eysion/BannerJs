@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Banner.js</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="banner-load"><img src="./images/4.gif"></div>
+<div class="banner-show">
+    <div class="banner-list">
+        <!-- 轮播内容 -->
+        <div class="banner-item">
+            <img src="./images/4.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/3.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/2.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/1.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/5.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/6.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/7.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/8.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/9.gif" />
+        </div>  
+        <div class="banner-item">
+            <img src="./images/10.gif" />
+        </div>  
+        <div class="banner-item">
+            <img src="./images/11.gif" />
+        </div>  
+        <div class="clearfix"></div>
+    </div>
+    
+    <!-- disk点击 -->
+    <div class="banner-disk"></div>
+    <!-- 左右按钮 -->
+    <span class="goprev">&lt;</span>
+    <span class="gonext">&gt;</span>
+</div>
+
+<!-- 实例2 -->
+
+<div class="banner-test">
+    <div class="banner-list">
+        <!-- 轮播内容 -->
+        <div class="banner-item">
+            <img src="./images/4.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/3.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/2.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/1.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/5.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/6.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/7.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/8.gif" />
+        </div>
+        <div class="banner-item">
+            <img src="./images/9.gif" />
+        </div>  
+        <div class="banner-item">
+            <img src="./images/10.gif" />
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+    <!-- disk点击 -->
+    <div class="banner-disk"></div>
+    <!-- 左右按钮 -->
+    <span class="goprev">&lt;</span>
+    <span class="gonext">&gt;</span>
+</div>
+
+<!--jquery script -->
+    <script type="text/javascript" src="./script/jquery-1.11.1.min.js"></script>
+<!-- jquer.mousewheel -->
+    <script type="text/javascript" src="./script/jquery.mousewheel.min.js"></script>
+<!--banner.js-->
+    <script type="text/javascript" src="./banner.min.js"></script>
+
+<script type="text/javascript">
+    $('.banner-show').bannerjs({
+          loading :   $('.banner-load'),                                           //loading画面
+          bannerList :    $('.banner-show .banner-list'),                          //轮播的块状模型
+          bannerItem :    $('.banner-show .banner-item'),                          //单个轮播元素的模型
+          goNext :        $('.banner-show span.gonext'),                           //加载下一张图片的元素
+          goPrev :        $('.banner-show span.goprev'),                           //加载上一张图片的元素
+          goDisk :        $('.banner-show .banner-disk'),                          //焦点模块模型
+          ItemPadding :   2,                                                       //单个轮播元素间的补白
+          goDiskWidth :   12,                                                      //单个焦点元素的宽度
+          bannerShow :    1,                                                       //一次展示的元素个数
+          bannerDisk :    true,                                                    //是否开启焦点
+          bannerwheel :   true,                                                    //鼠标滚轮事件
+          bannerauto :    false,                                                   //是否开启自动轮播
+          autoTime :      5000                                                     //自动轮播的时间
+    });
+
+    $('.banner-test').bannerjs({
+            loading :       $('.banner-load'),                                    //loading画面
+            bannerList :    $('.banner-test .banner-list'),                       //轮播的块状模型
+            bannerItem :    $('.banner-test .banner-item'),                       //单个轮播元素的模型
+            goNext :        $('.banner-test span.gonext'),                        //加载下一张图片的元素
+            goPrev :        $('.banner-test span.goprev'),                        //加载上一张图片的元素
+            goDisk :        $('.banner-test .banner-disk'),                       //焦点模块模型
+            ItemPadding :   3,                                                    //单个轮播元素间的补白
+            goDiskWidth :   12,                                                   //单个焦点元素的宽度
+            bannerShow :    2,                                                    //一次展示的元素个数
+            bannerDisk :    true,                                                 //是否开启焦点
+            bannerwheel :   true,                                                 //鼠标滚轮事件
+            bannerauto :    false,                                                //是否开启自动轮播
+            autoTime :      5000                                                  //自动轮播的时间
+    });
+</script>
+</body>
+</html>
