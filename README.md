@@ -4,11 +4,10 @@ Banner.js v0.1版
 作者：elysion72513<br>
 时间：2014-11-12<br>
 联系邮箱：elsyion72513@hotmail.com
+<span style="color:red">打包文件内有完整实例，请下载后进行调试</span>
 </p>
 
-
-<pre>
-<h3>*options的默认属性说明</h3>
+<pre><h3>*options的默认属性说明</h3>
 *loading  		//加载banner模块前的展示内容<必须是 标签类型 && class && id>
 *bannerBox		//包含轮播块的模型
 *bannerList 	//轮播的块状模型
