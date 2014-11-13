@@ -15,7 +15,7 @@ Banner.js v0.1版
 *bannerShow		//一次展示的元素个数
 *gonext		    //加载下一张图片的元素
 *goprev		    //加载上一张图片的元素
-*goDisk 		  //焦点模块模型
+*goDisk 		//焦点模块模型
 *ItemPadding	//单个轮播元素间的补白
 *goDiskWidth 	//单个焦点元素的宽度
 *bannerDisk 	//是否开启焦点
